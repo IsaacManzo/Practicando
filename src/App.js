@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+
+// ? Importamos componentes para poder ponerlos dentro de App
+import TaskForm from './components/TaskForm'; 
+import TasksList from './components/TasksList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hola mundo</h1>
+
+      <TaskForm />
+      <TasksList />  
     </div>
   );
 }
